@@ -174,3 +174,5 @@ Traceback (most recent call last):
                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: module 'assets.kb' has no attribute 'business_income_button'
 2025-03-29 06:24:03 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 15:23:49 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 15:25:39 - WARNING aiogram: Updates were skipped successfully.
