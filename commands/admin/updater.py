@@ -33,7 +33,7 @@ async def search_update(force: bool = False, check: bool = False) -> bool:
 		if not check and if_notification and not force:
 			return False
 		
-		response = requests.get("https://github.com/Kirillgggg/BPKv1")
+		response = requests.get("https://github.com/net9nixya/bfgggg1254")
 		response.raise_for_status()
 		
 		content = response.text
@@ -54,7 +54,7 @@ async def search_update(force: bool = False, check: bool = False) -> bool:
 		
 		if_notification = True
 		
-		response = requests.get("https://github.com/Kirillgggg/BPKv1")
+		response = requests.get("https://github.com/net9nixya/bfgggg1254")
 		
 		txt = f'<b>🔍 Доступно обновление 🛎</b>\nЧто нового?\n\n<i>{response.text}</i>'
 		
@@ -73,14 +73,14 @@ async def update_bot(message: types.Message):
 	forse = False
 	check = await search_update(check=True)
 	if not check and '-f' not in message.text:
-		await message.answer(f'<b>😄 У вас установлена последняя версия бота!</b>\n Вы также можете попробовать <a href="https://github.com/Kirillgggg/BPKv1">обновиться вручную</a>')
+		await message.answer(f'<b>😄 У вас установлена последняя версия бота!</b>\n Вы также можете попробовать <a href="https://github.com/net9nixya/bfgggg1254">обновиться вручную</a>')
 		return
 	
 	if not check:
-		txt = '⚠️ У вас уже установлена последняя версия бота.\n<i>Нажмите на кнопку ниже, если вы хотите</i> <a href="https://github.com/Kirillgggg/BPKv1">обновить файлы бота</a>'
+		txt = '⚠️ У вас уже установлена последняя версия бота.\n<i>Нажмите на кнопку ниже, если вы хотите</i> <a href="https://github.com/net9nixya/bfgggg1254">обновить файлы бота</a>'
 		forse = True
 	else:
-		response = requests.get("https://github.com/Kirillgggg/BPKv1")
+		response = requests.get("https://github.com/net9nixya/bfgggg1254")
 		txt = f'<b>🔍 Доступно обновление 🛎</b>\nЧто нового?\n\n<i>{response.text}</i>'
 
 	await message.answer(txt, reply_markup=kb.update_bot(forse=forse))
@@ -105,7 +105,7 @@ async def bot_update(call: types.CallbackQuery) -> None:
 	await call.message.edit_text('<i>🎩 Установка обновления...</i>')
 	
 	with tempfile.TemporaryDirectory() as temp_dir:
-		subprocess.run(['git', 'clone', 'https://github.com/Kirillgggg/BPKv1.git', temp_dir], check=True)
+		subprocess.run(['git', 'clone', 'https://github.com/net9nixya/bfgggg1254.git', temp_dir], check=True)
 
 		for item in os.listdir(temp_dir):
 			if item in ['config_ex.py', 'modules']:
