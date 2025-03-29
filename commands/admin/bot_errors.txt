@@ -1,0 +1,176 @@
+2025-03-29 04:56:32 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:03:27 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:04:38 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:10:19 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:16:25 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:19:43 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:23:14 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-100' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('conversion from FormattableValue to Decimal is not supported')>
+Traceback (most recent call last):
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\bfg-main\bfg-main\assets\antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "E:\bfg-main\bfg-main\commands\basic\ore\main.py", line 90, in sell_rating_cmd
+    summ_r = Decimal(summ_r)
+             ^^^^^^^^^^^^^^^
+TypeError: conversion from FormattableValue to Decimal is not supported
+2025-03-29 05:28:47 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-189' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\bfg-main\bfg-main\assets\antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "E:\bfg-main\bfg-main\commands\basic\ore\main.py", line 132, in buy_ratting_cmd
+    await user.rating.upd(r_summ, '+')
+  File "E:\bfg-main\bfg-main\user\format.py", line 36, in upd
+    await db.sql_zapros(sql, summ, self.user_id)
+  File "E:\bfg-main\bfg-main\commands\db.py", line 220, in sql_zapros
+    cursor.execute(sql, (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-03-29 05:29:25 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-232' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\bfg-main\bfg-main\assets\antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "E:\bfg-main\bfg-main\commands\entertaining\case\main.py", line 64, in buy_case_cmd
+    await user.case[1].upd(amount, '+')
+  File "E:\bfg-main\bfg-main\user\format.py", line 36, in upd
+    await db.sql_zapros(sql, summ, self.user_id)
+  File "E:\bfg-main\bfg-main\commands\db.py", line 220, in sql_zapros
+    cursor.execute(sql, (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-03-29 05:29:47 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-246' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\bfg-main\bfg-main\assets\antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "E:\bfg-main\bfg-main\commands\entertaining\case\main.py", line 64, in buy_case_cmd
+    await user.case[1].upd(amount, '+')
+  File "E:\bfg-main\bfg-main\user\format.py", line 36, in upd
+    await db.sql_zapros(sql, summ, self.user_id)
+  File "E:\bfg-main\bfg-main\commands\db.py", line 220, in sql_zapros
+    cursor.execute(sql, (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-03-29 05:30:04 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:30:38 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-39' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\bfg-main\bfg-main\assets\antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "E:\bfg-main\bfg-main\commands\entertaining\case\main.py", line 64, in buy_case_cmd
+    await user.case[1].upd(amount, '+')
+  File "E:\bfg-main\bfg-main\user\format.py", line 36, in upd
+    await db.sql_zapros(sql, summ, self.user_id)
+  File "E:\bfg-main\bfg-main\commands\db.py", line 220, in sql_zapros
+    cursor.execute(sql, (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-03-29 05:31:37 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:31:37 - WARNING aiogram: Goodbye!
+2025-03-29 05:31:52 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:31:52 - WARNING aiogram: Goodbye!
+2025-03-29 05:43:54 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:43:54 - WARNING aiogram: Goodbye!
+2025-03-29 05:46:11 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:52:15 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:57:23 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 05:57:24 - WARNING aiogram: Goodbye!
+2025-03-29 06:12:16 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 06:16:57 - WARNING aiogram: Updates were skipped successfully.
+2025-03-29 06:17:07 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("module 'assets.kb' has no attribute 'business_income_button'")>
+Traceback (most recent call last):
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\bfg-main\bfg-main\assets\antispam.py", line 88, in wrapper
+    await func(call, user)
+  File "E:\bfg-main\bfg-main\commands\entertaining\earnings\business\main.py", line 172, in show_income
+    await call.message.edit_text(text=txt, reply_markup=kb.business_income_button(user.id))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'assets.kb' has no attribute 'business_income_button'
+2025-03-29 06:24:03 - WARNING aiogram: Updates were skipped successfully.
