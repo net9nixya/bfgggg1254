@@ -1,178 +1,1017 @@
-2025-03-29 04:56:32 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:03:27 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:04:38 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:10:19 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:16:25 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:19:43 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:23:14 - ERROR asyncio: Task exception was never retrieved
-future: <Task finished name='Task-100' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('conversion from FormattableValue to Decimal is not supported')>
+2025-04-07 16:44:19 - WARNING aiogram: Updates were skipped successfully.
+2025-04-07 16:52:55 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-319' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("'NoneType' object is not subscriptable")>
 Traceback (most recent call last):
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
     for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
     return await asyncio.gather(*tasks)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
     return await self.message_handlers.notify(update.message)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "E:\bfg-main\bfg-main\assets\antispam.py", line 51, in wrapper
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
     await func(message, user)
-  File "E:\bfg-main\bfg-main\commands\basic\ore\main.py", line 90, in sell_rating_cmd
-    summ_r = Decimal(summ_r)
-             ^^^^^^^^^^^^^^^
-TypeError: conversion from FormattableValue to Decimal is not supported
-2025-03-29 05:28:47 - ERROR asyncio: Task exception was never retrieved
-future: <Task finished name='Task-189' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/basic/top.py", line 133, in top_clans
+    d, _, _ = await clan_full_info(claninfo[1])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/clans/db.py", line 30, in clan_full_info
+    glovo = cursor.execute('SELECT user_id FROM clan WHERE clan_id = ? AND rank = 4', (cid,)).fetchone()[0]
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-04-07 16:59:55 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-499' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("'<' not supported between instances of 'FormattableValue' and 'int'")>
 Traceback (most recent call last):
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
     for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
     return await asyncio.gather(*tasks)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
     return await self.message_handlers.notify(update.message)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "E:\bfg-main\bfg-main\assets\antispam.py", line 51, in wrapper
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
     await func(message, user)
-  File "E:\bfg-main\bfg-main\commands\basic\ore\main.py", line 132, in buy_ratting_cmd
-    await user.rating.upd(r_summ, '+')
-  File "E:\bfg-main\bfg-main\user\format.py", line 36, in upd
-    await db.sql_zapros(sql, summ, self.user_id)
-  File "E:\bfg-main\bfg-main\commands\db.py", line 220, in sql_zapros
-    cursor.execute(sql, (summ, user_id))
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/basic/bank/main.py", line 133, in put_depozit_cmd
+    if summ < 1000:
+       ^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'FormattableValue' and 'int'
+2025-04-07 17:26:29 - WARNING aiogram: Updates were skipped successfully.
+2025-04-07 17:28:45 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-38' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
 OverflowError: Python int too large to convert to SQLite INTEGER
-2025-03-29 05:29:25 - ERROR asyncio: Task exception was never retrieved
-future: <Task finished name='Task-232' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+2025-04-07 17:29:08 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-50' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
 Traceback (most recent call last):
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
     for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
     return await asyncio.gather(*tasks)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
     return await self.message_handlers.notify(update.message)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "E:\bfg-main\bfg-main\assets\antispam.py", line 51, in wrapper
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
     await func(message, user)
-  File "E:\bfg-main\bfg-main\commands\entertaining\case\main.py", line 64, in buy_case_cmd
-    await user.case[1].upd(amount, '+')
-  File "E:\bfg-main\bfg-main\user\format.py", line 36, in upd
-    await db.sql_zapros(sql, summ, self.user_id)
-  File "E:\bfg-main\bfg-main\commands\db.py", line 220, in sql_zapros
-    cursor.execute(sql, (summ, user_id))
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
 OverflowError: Python int too large to convert to SQLite INTEGER
-2025-03-29 05:29:47 - ERROR asyncio: Task exception was never retrieved
-future: <Task finished name='Task-246' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+2025-04-07 17:29:28 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-61' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: biores')>
 Traceback (most recent call last):
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
     for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
     return await asyncio.gather(*tasks)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
     return await self.message_handlers.notify(update.message)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "E:\bfg-main\bfg-main\assets\antispam.py", line 51, in wrapper
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
     await func(message, user)
-  File "E:\bfg-main\bfg-main\commands\entertaining\case\main.py", line 64, in buy_case_cmd
-    await user.case[1].upd(amount, '+')
-  File "E:\bfg-main\bfg-main\user\format.py", line 36, in upd
-    await db.sql_zapros(sql, summ, self.user_id)
-  File "E:\bfg-main\bfg-main\commands\db.py", line 220, in sql_zapros
-    cursor.execute(sql, (summ, user_id))
-OverflowError: Python int too large to convert to SQLite INTEGER
-2025-03-29 05:30:04 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:30:38 - ERROR asyncio: Task exception was never retrieved
-future: <Task finished name='Task-39' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: biores
+2025-04-07 17:29:35 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-66' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: biores')>
 Traceback (most recent call last):
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
     for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
     return await asyncio.gather(*tasks)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 256, in process_update
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
     return await self.message_handlers.notify(update.message)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "E:\bfg-main\bfg-main\assets\antispam.py", line 51, in wrapper
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
     await func(message, user)
-  File "E:\bfg-main\bfg-main\commands\entertaining\case\main.py", line 64, in buy_case_cmd
-    await user.case[1].upd(amount, '+')
-  File "E:\bfg-main\bfg-main\user\format.py", line 36, in upd
-    await db.sql_zapros(sql, summ, self.user_id)
-  File "E:\bfg-main\bfg-main\commands\db.py", line 220, in sql_zapros
-    cursor.execute(sql, (summ, user_id))
-OverflowError: Python int too large to convert to SQLite INTEGER
-2025-03-29 05:31:37 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:31:37 - WARNING aiogram: Goodbye!
-2025-03-29 05:31:52 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:31:52 - WARNING aiogram: Goodbye!
-2025-03-29 05:43:54 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:43:54 - WARNING aiogram: Goodbye!
-2025-03-29 05:46:11 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:52:15 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:57:23 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 05:57:24 - WARNING aiogram: Goodbye!
-2025-03-29 06:12:16 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 06:16:57 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 06:17:07 - ERROR asyncio: Task exception was never retrieved
-future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=AttributeError("module 'assets.kb' has no attribute 'business_income_button'")>
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: biores
+2025-04-07 17:30:08 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-77' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: biores')>
 Traceback (most recent call last):
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
     for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
     return await asyncio.gather(*tasks)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
-    return await self.callback_query_handlers.notify(update.callback_query)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
     response = await handler_obj.handler(*args, **partial_data)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "E:\bfg-main\bfg-main\assets\antispam.py", line 88, in wrapper
-    await func(call, user)
-  File "E:\bfg-main\bfg-main\commands\entertaining\earnings\business\main.py", line 172, in show_income
-    await call.message.edit_text(text=txt, reply_markup=kb.business_income_button(user.id))
-                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: module 'assets.kb' has no attribute 'business_income_button'
-2025-03-29 06:24:03 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 15:23:49 - WARNING aiogram: Updates were skipped successfully.
-2025-03-29 15:25:39 - WARNING aiogram: Updates were skipped successfully.
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: biores
+2025-04-07 17:35:02 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-226' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-07 17:35:20 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-231' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-07 17:35:32 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-237' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-07 17:48:02 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-332' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-07 17:48:38 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-345' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-07 17:48:49 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-349' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-07 17:50:24 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-373' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: biores')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: biores
+2025-04-07 17:50:32 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-377' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: biores')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: biores
+2025-04-07 18:09:03 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-517' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-07 18:09:32 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-539' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-07 18:10:19 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-555' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: biores')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: biores
+2025-04-07 18:10:41 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-561' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: materr')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: materr
+2025-04-08 15:21:34 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-8964' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-08 15:21:43 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-8979' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-08 15:22:06 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-8999' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-08 15:22:17 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-9004' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-08 15:22:22 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-9009' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-08 15:22:43 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-9029' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-08 15:24:46 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-9104' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OverflowError('Python int too large to convert to SQLite INTEGER')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 73, in activ_promo_db
+    cursor.execute(f'UPDATE {table} SET {column} = ? WHERE user_id = ?', (summ, user_id))
+OverflowError: Python int too large to convert to SQLite INTEGER
+2025-04-08 15:25:37 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-9117' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: biores')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: biores
+2025-04-08 18:17:30 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-11301' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("'<' not supported between instances of 'FormattableValue' and 'int'")>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/basic/bank/main.py", line 133, in put_depozit_cmd
+    if summ < 1000:
+       ^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'FormattableValue' and 'int'
+2025-04-08 18:21:11 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-11409' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: biores')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: biores
+2025-04-08 18:21:29 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-11424' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: biores')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: biores
+2025-04-08 18:21:50 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-11455' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: biores')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: biores
+2025-04-08 18:41:31 - WARNING apscheduler.executors.default: Run time of job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-08 18:46:29 CEST)" was missed by 0:00:01.299910
+2025-04-08 21:50:53 - ERROR asyncio: Task exception was never retrieved
+future: <Task finished name='Task-13251' coro=<Dispatcher._process_polling_updates() done, defined at /home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=OperationalError('no such column: biores')>
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 256, in process_update
+    return await self.message_handlers.notify(update.message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/assets/antispam.py", line 51, in wrapper
+    await func(message, user)
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/promo.py", line 154, in activ_promo
+    res = await activ_promo_db(name, user.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/home/sunkamil/bfg/bfgggg1254/commands/admin/db.py", line 67, in activ_promo_db
+    balance = cursor.execute(f'SELECT {column} FROM {table} WHERE user_id = ?', (user_id,)).fetchone()[0]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: biores
+2025-04-09 03:55:11 - ERROR aiogram.dispatcher.dispatcher: Cause exception while getting updates.
+Traceback (most recent call last):
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/dispatcher/dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/bot/bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sunkamil/.local/lib/python3.11/site-packages/aiogram/bot/api.py", line 128, in check_result
+    raise exceptions.TelegramAPIError(description)
+aiogram.utils.exceptions.TelegramAPIError: Bad Gateway
+2025-04-09 18:10:22 - WARNING aiogram: Updates were skipped successfully.
+2025-04-09 18:14:35 - WARNING aiogram: Goodbye!
+2025-04-09 18:15:29 - WARNING aiogram: Updates were skipped successfully.
+2025-04-09 18:25:07 - WARNING aiogram: Goodbye!
+2025-04-09 18:25:14 - WARNING aiogram: Updates were skipped successfully.
+2025-04-09 18:28:01 - WARNING aiogram: Goodbye!
+2025-04-09 18:28:17 - WARNING aiogram: Updates were skipped successfully.
+2025-04-09 18:29:42 - WARNING aiogram: Goodbye!
+2025-04-09 18:49:53 - WARNING aiogram: Updates were skipped successfully.
+2025-04-09 18:50:16 - WARNING aiogram: Goodbye!
+2025-04-09 18:50:21 - WARNING aiogram: Updates were skipped successfully.
+2025-04-09 18:51:52 - WARNING aiogram: Goodbye!
+2025-04-09 18:51:57 - WARNING aiogram: Updates were skipped successfully.
+2025-04-09 18:57:49 - WARNING aiogram: Goodbye!
+2025-04-09 18:58:00 - WARNING aiogram: Updates were skipped successfully.
+2025-04-09 18:58:55 - WARNING aiogram: Goodbye!
+2025-04-09 18:59:02 - WARNING aiogram: Updates were skipped successfully.
+2025-04-09 19:14:20 - WARNING apscheduler.executors.default: Run time of job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-09 19:19:19 +05)" was missed by 0:00:01.483776
+2025-04-09 19:19:30 - WARNING urllib3.connectionpool: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000021A122B2C50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/v3/simple/price?ids=bitcoin&vs_currencies=usd
+2025-04-09 19:29:31 - WARNING apscheduler.executors.default: Run time of job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-09 19:34:19 +05)" was missed by 0:00:12.866576
+2025-04-09 19:33:48 - WARNING aiogram: Goodbye!
+2025-04-09 19:34:05 - WARNING aiogram: Updates were skipped successfully.
+2025-04-09 19:49:21 - WARNING apscheduler.executors.default: Run time of job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-09 19:54:08 +05)" was missed by 0:00:12.963358
+2025-04-09 20:00:56 - ERROR aiogram.dispatcher.dispatcher: Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client.py", line 560, in _request
+    await resp.start(conn)
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client_reqrep.py", line 899, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [WinError 121] Превышен таймаут семафора
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [WinError 121] Превышен таймаут семафора
+2025-04-09 20:04:21 - WARNING apscheduler.executors.default: Run time of job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-09 20:09:08 +05)" was missed by 0:00:12.784119
+2025-04-09 20:11:03 - ERROR aiogram.dispatcher.dispatcher: Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client.py", line 560, in _request
+    await resp.start(conn)
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client_reqrep.py", line 894, in start
+    with self._timer:
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\helpers.py", line 720, in __exit__
+    raise asyncio.TimeoutError from None
+TimeoutError
+2025-04-09 20:19:21 - WARNING apscheduler.executors.default: Run time of job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-09 20:24:08 +05)" was missed by 0:00:13.287615
+2025-04-09 20:34:21 - WARNING apscheduler.executors.default: Run time of job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-09 20:39:08 +05)" was missed by 0:00:13.399809
+2025-04-09 20:49:21 - WARNING apscheduler.executors.default: Run time of job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-09 20:54:08 +05)" was missed by 0:00:12.762538
+2025-04-09 21:04:21 - WARNING apscheduler.executors.default: Run time of job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-09 21:09:08 +05)" was missed by 0:00:13.216812
+2025-04-09 21:09:30 - ERROR apscheduler.executors.default: Job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-09 21:14:08 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\bfgggg1254\assets\auto.py", line 42, in autocommands3
+    await autokursbtc_new()
+  File "E:\bfgggg1254\commands\basic\ore\db.py", line 62, in autokursbtc_new
+    new_kurs = api.get_price(ids='bitcoin', vs_currencies='usd')['bitcoin']['usd']
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycoingecko\utils.py", line 16, in input_args
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycoingecko\api.py", line 114, in get_price
+    return self.__request(api_url, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycoingecko\api.py", line 44, in __request
+    response = self.session.get(url, params=params, timeout=self.request_timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 542, in get
+    return self.request('GET', url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+2025-04-09 21:19:11 - WARNING apscheduler.executors.default: Run time of job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-09 21:24:08 +05)" was missed by 0:00:03.606688
+2025-04-09 21:30:17 - ERROR aiogram.dispatcher.dispatcher: Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 382, in start_polling
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client.py", line 1141, in __aenter__
+    self._resp = await self._coro
+                 ^^^^^^^^^^^^^^^^
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client.py", line 560, in _request
+    await resp.start(conn)
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\client_reqrep.py", line 894, in start
+    with self._timer:
+  File "C:\Users\vital\AppData\Local\Programs\Python\Python311\Lib\site-packages\aiohttp\helpers.py", line 720, in __exit__
+    raise asyncio.TimeoutError from None
+TimeoutError
+2025-04-09 21:34:22 - WARNING apscheduler.executors.default: Run time of job "autocommands3 (trigger: interval[0:05:00], next run at: 2025-04-09 21:39:08 +05)" was missed by 0:00:13.735184
+2025-04-09 21:37:13 - WARNING aiogram: Goodbye!
+2025-04-09 21:37:33 - WARNING aiogram: Updates were skipped successfully.
